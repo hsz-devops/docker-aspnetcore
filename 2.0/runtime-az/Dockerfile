@@ -35,3 +35,4 @@ RUN  chmod -R a+xX                 /docker-entrypoint*.sh
 COPY _src/sshd_config /etc/ssh/
 
 EXPOSE 2222
+ENTRYPOINT ["/docker-entrypoint-az.sh"]
